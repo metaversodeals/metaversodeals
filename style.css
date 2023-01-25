@@ -1,0 +1,114 @@
+:root {
+    --title-color: #4f4f4f;
+    --header-color: #4f4f4f;
+    --link-color: #4f4f4f;
+    --link-color-visited: #4f4f4f;
+    --link-color-hover: #9c9c9c;
+    --background-color: #f4f4f4;
+    --button-color: #4C4C4C;
+    --button-text-color: #f4f4f4;
+    --button-hover-color: #9c9c9c;
+  }
+  
+div {
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    color: var(--header-color);
+    background-color: var(--background-color);
+}
+
+ul {
+    column-count: 4;
+    column-gap: 128px;
+}
+
+@media (max-width: 900px) {
+    ul {
+        column-count: 3;
+        column-gap: 128px;
+    }
+}
+@media (max-width: 600px) {
+    ul {
+        column-count: 2;
+        column-gap: 128px;
+    }
+}
+@media (max-width: 400px) {
+    ul {
+        column-count: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (min-width: 600px) {
+    div {
+        margin: 0 75px;
+    }
+}
+
+h1 {
+    color: var(--title-color);
+    font-size: 2em;
+    line-height: 1.2;
+    letter-spacing: 0.1em;
+    word-spacing: 0.2em;
+}
+
+h2 {
+    color: var(--header-color);
+    font-size: 1.5em;
+    line-height: 1.5;
+    letter-spacing: 0.05em;
+    word-spacing: 0.1em;
+}
+
+
+a:link {
+    color: var(--link-color);
+}
+a:visited {
+    color: var(--link-color-visited);
+}
+a:hover {
+    color: var(--link-color-hover);
+    font-weight: bold;
+}
+a:hover::before {
+    content: "metaverso.";
+}
+
+.contact-button {
+    background-color: var(--button-color);
+    border: none;
+    color: var(--button-text-color);
+    font-weight: bold;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-out;
+}
+
+.contact-button:hover {
+    background-color: var(--button-hover-color);
+    cursor: pointer;
+}
